@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.Controller.WebsiteController">
+   <children>
+      <TextField fx:id="authorName" layoutX="30.0" layoutY="57.0" promptText="Author names" />
+      <TextField fx:id="Year" layoutX="30.0" layoutY="100.0" promptText="Year" />
+      <TextField fx:id="Title" layoutX="30.0" layoutY="141.0" promptText="Title" />
+      <TextField fx:id="Website" layoutX="30.0" layoutY="187.0" promptText="Website Name" />
+      <TextField fx:id="accessedDate" layoutX="30.0" layoutY="234.0" promptText="Accessed Date" />
+      <TextField fx:id="URL" layoutX="30.0" layoutY="277.0" promptText="URL" />
+      <Text fx:id="myText" layoutX="343.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Result" wrappingWidth="149.33333333333337">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Text>
+      <Button layoutX="51.0" layoutY="330.0" mnemonicParsing="false" onAction="#onSubmitButtonPressed" prefHeight="34.0" prefWidth="108.0" text="Submit" />
+      <Button layoutX="179.0" layoutY="330.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="108.0" text="Reset" />
+      <Button layoutX="310.0" layoutY="330.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="108.0" text="Return" />
+   </children>
+</AnchorPane>
