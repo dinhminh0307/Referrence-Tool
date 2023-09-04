@@ -8,12 +8,11 @@ public class AppSystem {
     public String formatAuthorName(String authors) {
         List<String> authorList = new ArrayList<String>(Arrays.asList(authors.split(" , ")));
         String finalResult = "";
-        String oneNameFormat = "";
-        if(authorList.size() == 1) {
+        if(authorList.size() == 1) { // for only one author
             int index = 0;
             List<String> nameList = new ArrayList<String>(Arrays.asList(authorList.get(0).split(" ")));
             String lastName = nameList.get(nameList.size() - 1);
-            if(nameList.size() ==1) {
+            if(nameList.size() ==1) { // if this author name have 1 word
                 return lastName;
             }
             else {
@@ -25,7 +24,13 @@ public class AppSystem {
                     index++;
                 }
             }
-            finalResult = finalResult + "," + lastName;
+            if (index == 1) {
+                finalResult = finalResult + lastName;
+            }
+            else {
+                finalResult = finalResult + ", " + lastName;
+            }
+            finalResult = finalResult + ", " + lastName;
         }
         for(String tmp : authorList) {
             if(tmp.equals(authorList.get(authorList.size()-1))) {
@@ -46,7 +51,13 @@ public class AppSystem {
                     index++;
                 }
             }
-            finalResult = finalResult + "," + lastName;
+            if (index == 1) {
+                finalResult = finalResult + lastName;
+            }
+            else {
+                finalResult = finalResult + ", " + lastName;
+            }
+
         }
         return finalResult;
     }
