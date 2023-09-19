@@ -37,11 +37,11 @@ public class WebsiteController implements Initializable {
         final Clipboard clipboard = Clipboard.getSystemClipboard();
         final ClipboardContent content = new ClipboardContent();
         content.putString(new AppSystem().websiteReference(myStr, Year.getText(),
-                Title.getText(), Website.getText(), accessedDate.getText(), URL.getText()));
+                Title.getText(), Website.getText(), URL.getText()));
         clipboard.setContent(content);
 
         myText.setText(new AppSystem().websiteReference(myStr, Year.getText(),
-                Title.getText(), Website.getText(), accessedDate.getText(), URL.getText()));
+                Title.getText(), Website.getText(), URL.getText()));
     }
 
     public void DefaultDisplay() {
@@ -49,7 +49,6 @@ public class WebsiteController implements Initializable {
         Year.clear();
         Title.clear();
         Website.clear();
-        accessedDate.clear();
         myText.setText("Result");
     }
     public void onResetButtonPressed(ActionEvent event) throws IOException{
