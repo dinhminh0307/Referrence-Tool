@@ -49,6 +49,7 @@ public class WebsiteController implements Initializable {
         Year.clear();
         Title.clear();
         Website.clear();
+        URL.clear();
         myText.setText("Result");
     }
     public void onResetButtonPressed(ActionEvent event) throws IOException{

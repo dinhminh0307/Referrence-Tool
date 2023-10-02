@@ -1,4 +1,4 @@
-package com.example.demo.Constant;
+package Model.Constant;
 
 import java.text.DateFormatSymbols;
 import java.time.LocalDate;

@@ -1,6 +1,6 @@
 package Model;
 
-import com.example.demo.Constant.VietnamDate;
+import Model.Constant.VietnamDate;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -65,6 +65,6 @@ public class AppSystem {
         return "Accessed " + new VietnamDate().getCurrentDate() + " " + new VietnamDate().getCurrentMonth() + " " + new VietnamDate().getCurrentYear();
     }
     public String websiteReference(String authorName, String year, String title, String website, String URL) {
-        return authorName + "(" + year + ")" + " " + title + ", " + website + ", " + formatAccessedDate() + ", " + URL;
+        return authorName + "(" + year + ")" + " " + title + ", " + website + ", " + formatAccessedDate() + ". " + URL;
     }
 }
